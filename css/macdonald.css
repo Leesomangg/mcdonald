@@ -1,36 +1,134 @@
 @charset "utf-8";
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-a{
-    color: black;
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-ul, li{
-    list-style: none;
+ul,
+li {
+  list-style: none;
 }
-.wrap{
-    width: 1920px;
-    height: 2244px;
-    display: block;
-    position: relative;
+.container {
+  position: relative;
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
 }
-.header{
+.wrap {
+  display: block;
+  position: relative;
+  width: 1920px;
+}
+header {
+  width: 1920px;
+  height: 140px;
+  padding: 23.5px 0;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  padding-right: 40px;
+}
+.menu .menu-list {
+  display: flex;
+  justify-content: space-between;
+  width: 564px;
+}
+.menu .menu-list li {
+  width: calc(564px / 4);
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+}
+.menu .menu-list li a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+.etc .etc-list {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+.etc .etc-list li {
+  width: 80px;
+  height: 34px;
+  border: 1px none;
+  border-radius: 48px;
+  line-height: 34px;
+  text-align: center;
+}
+.etc .etc-list li a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+.etc .etc-list li:nth-child(1) {
+  background-color: #ff0000;
+}
+.etc .etc-list li:nth-child(2) {
+  background-color: #d87e00;
+}
+.etc .etc-list li:nth-child(3) {
+  background-color: #264a36;
+}
+/* 슬라이드 */
+.slide{
+    background: url("../imagepc/1703125759992.jpg") no-repeat;
     width: 100%;
-    height: 140px;
-    position: relative;
+    height: 540px;
 }
-/* 로고 */
-.header .logo{
-    width: 106px;
-    height: 93px;
+/* 메인 */
+main{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1305px;
+}
+.main-inner{
+    height: 100%;
+    flex-wrap: wrap;
+}
+.main-inner h1{
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+.live-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+.live-list li{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+}
+.live-list li a img{
+    width: 366px;
+    height: 300px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.live-list li a span{
+    display: block;
+    text-align: center;
+    padding: 25px 45px 51px 45px;
+}
+.plus-btn{
     display: block;
     position: absolute;
-    top: 23px;
-    left: 364px;
-}
-/* 네비 */
-.nav{
+    bottom: 60px;
+    left: 550px;
 }
