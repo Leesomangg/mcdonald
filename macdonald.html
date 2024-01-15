@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <link rel="icon" type="image/png" sizes="16x16" href="imagepc/logo.png" />
-    <title>맥도날드</title>
     <link rel="stylesheet" href="css/macdonald.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="js/macdonald.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
+  <title>맥도날드</title>
   <body>
     <div class="wrap">
       <!-- 헤더 -->
@@ -36,15 +41,71 @@
         </div>
       </header>
       <!-- 슬라이드 -->
-      <div class="slide">
+      <div class="swiper slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#"><img src="imagepc/1.jpg" alt="행운버거" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="imagepc/2.jpg" alt="해피스낵" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="imagepc/3.jpg" alt="M오더" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="imagepc/4.jpg" alt="맥크리스피" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="imagepc/5.jpg" alt="맥모닝" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"
+              ><img src="imagepc/6.jpg" alt="라즈베리 크림치즈 파이"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="imagepc/7.jpg" alt="칠러" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="imagepc/8.jpg" alt="맥런치" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="imagepc/9.jpg" alt="채용" /></a>
+          </div>
+        </div>
+        <div class="swiper-button-next right"></div>
+        <div class="swiper-button-prev left"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <script>
+        var swiper = new Swiper(".slide", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+      <!-- <div class="slide">
         <div class="slide-inner">
           <img src="imagepc/1703125759992.jpg" alt="행운버거" />
-          <div class="button ">
+          <div class="button">
             <button class="left-bt"></button>
             <button class="right-bt"></button>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- 메인 -->
       <main class="main">
         <div class="main-inner container">
@@ -115,6 +176,18 @@
               <img src="imagepc/btn_more.png" alt="더보기" />
             </a>
           </div>
+        </div>
+        <!-- top button -->
+        <div class="top-button">
+          <a href="#" class="story">
+            <img src="imagepc/btn_story_04.png" alt="story" />
+          </a>
+          <a href="#" class="delivery">
+            <img src="imagepc/btn_delivery_04.png" alt="delivery" />
+          </a>
+          <a href="#" class="top-btn">
+            <img src="imagepc/btn_top_04.png" alt="top-btn" id="top-btn-img" />
+          </a>
         </div>
       </main>
       <!-- 하단 -->
