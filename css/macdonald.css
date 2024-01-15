@@ -260,14 +260,14 @@ main {
   position: fixed;
   left: 49%;
   right: 30px;
-  max-height: 0px;
-  background-color: #ffbc0d;
+  top: 48%;
   margin: 0 0 0 635px;
   bottom: 310px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  z-index: 9999;
 }
 @media all and(max-width:768px) {
   .header-inner > .etc-list,
