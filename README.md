@@ -6,6 +6,6 @@
 2024.01.11 [Mcdonald PC ver.] HEADER, MAIN 작성 완료 <br>
 2024.01.12 [Mcdonald PC ver.] FOOTER 작성 완료 <br>
 2024.01.15 [Mcdonald PC ver.] js을 이용한 슬라이드, top 버튼 작성 완료 <br>
-2024.01.16 [Mcdonald PC ver.] 반응형에 맞춰 html, css 수정
-2024.01.17 [Mcdonald PC ver.] 스와이프 기능 작성 완료
-2024.01.18 [Mcdonald PC ver.] 완성
+2024.01.16 [Mcdonald PC ver.] 반응형에 맞춰 html, css 수정 <br>
+2024.01.17 [Mcdonald PC ver.] 스와이프 기능 작성 완료 <br>
+2024.01.18 [Mcdonald PC ver.] 완성 <br>
