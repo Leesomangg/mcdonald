@@ -61,43 +61,6 @@
           </div> -->
         </div>
       </header>
-      <!-- 슬라이드 -->
-      <!-- <div class="swiper slide">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href="#"><img src="imagepc/1.jpg" alt="행운버거" /></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#"><img src="imagepc/2.jpg" alt="해피스낵" /></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#"><img src="imagepc/3.jpg" alt="M오더" /></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#"><img src="imagepc/4.jpg" alt="맥크리스피" /></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#"><img src="imagepc/5.jpg" alt="맥모닝" /></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#">
-              <img src="imagepc/6.jpg" alt="라즈베리 크림치즈 파이"
-            /></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#"><img src="imagepc/7.jpg" alt="칠러" /></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#"><img src="imagepc/8.jpg" alt="맥런치" /></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#"><img src="imagepc/9.jpg" alt="채용" /></a>
-          </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-        </div>
-      </div> -->
       <div class="swiper slide">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -155,6 +118,68 @@
           },
         });
       </script>
+      <!-- 반응형 슬라이드 -->
+      <div class="swiper slidemb">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#"><img src="imagemb/1.jpg" alt="행운버거" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="imagemb/2.jpg" alt="해피스낵" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="imagemb/3.jpg" alt="M오더" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="imagemb/4.png" alt="맥크리스피" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="imagemb/5.jpg" alt="맥모닝" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"
+              ><img src="imagemb/6.jpg" alt="라즈베리 크림치즈 파이"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="imagemb/7.jpg" alt="칠러" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="imagemb/8.jpg" alt="맥런치" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="imagemb/9.jpg" alt="채용" /></a>
+          </div>
+        </div>
+        <div class="right-bt">
+          <img src="imagemb/prevwBtn (1).png" alt="오른쪽 버튼" />
+        </div>
+        <div class="left-bt">
+          <img src="imagemb/prevwBtn.png" alt="왼쪽 버튼" />
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div> -->
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+      <script>
+        var swiper = new Swiper(".slidemb", {
+          spaceBetween: 30,
+          loop: true,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".right-bt",
+            prevEl: ".left-bt",
+          },
+        });
+      </script>
       <!-- <div class="slide">
         <div class="slide-inner">
           <img src="imagepc/1703125759992.jpg" alt="행운버거" />
@@ -205,7 +230,7 @@
               <li>
                 <a href="#">
                   <img src="imagePc/1696769345457.jpg" alt="M오더" />
-                  <span>맥도날드 M오더</span>
+                  <span>맥도날드 M오더<br><p>.</p></span>
                 </a>
               </li>
               <li>
@@ -320,7 +345,7 @@
         <div class="map">
           <a href="#">
             <i class="fas fa-map-marker-alt"></i>
-            <span>위치</span>
+            <span>매장찾기</span>
           </a>
         </div>
       </div>
