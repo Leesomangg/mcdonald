@@ -9,3 +9,4 @@
 2024.01.16 [Mcdonald PC ver.] 반응형에 맞춰 html, css 수정 <br>
 2024.01.17 [Mcdonald PC ver.] 스와이프 기능 작성 완료 <br>
 2024.01.18 [Mcdonald PC ver.] 완성 <br>
+2024.01.22 [Mcdonald PC ver.] 토글 버튼 작성 <br>
