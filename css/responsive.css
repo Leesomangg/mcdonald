@@ -190,9 +190,12 @@
   .menu .menu-list {
     display: none;
   }
-  .header-inner .menu-bar {
+  .header-inner .menu-toggle-btn {
     display: block;
   }
+  /* .toggle-menu-bar-list{
+  display: block;
+} */
 }
 @media all and (max-width: 500px) {
   .footer-left-list3 {
@@ -221,6 +224,11 @@
     font-size: 25px;
   }
 }
+@media all and (max-width: 450px) {
+  .search-text {
+    width: 75%;
+  }
+}
 @media all and (max-width: 400px) {
   .delivery-bt {
     height: 70px;
@@ -245,6 +253,11 @@
 @media all and (max-width: 370px){
   .footer-right-list {
     gap: 10px;
+  }
+}
+@media all and (max-width: 365px) {
+  .search-text {
+    width: 65%;
   }
 }
 @media all and (max-width: 350px) {
