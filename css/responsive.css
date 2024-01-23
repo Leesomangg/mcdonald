@@ -200,6 +200,7 @@
   }
   .header-inner .menu-toggle-btn {
     display: block;
+    z-index: 999;
   }
   /* .toggle-menu-bar-list{
   display: block;
