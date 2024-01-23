@@ -460,9 +460,9 @@ main {
 /* top 버튼 */
 .top-button {
   position: fixed;
-  left: 49%;
+  left: 55%;
   right: 30px;
-  top: 48%;
+  top: 60%;
   margin: 0 0 0 635px;
   bottom: 310px;
   display: flex;
