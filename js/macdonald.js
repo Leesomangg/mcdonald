@@ -16,9 +16,16 @@ window.onload = function () {
       });
     }
   });
+  // var menuToggleBtn = $(".menu-toggle-btn");
+  // mainMenu = $(".toggle-menu-bar-list");
+  // menuToggleBtn.click(function () {
+  //   mainMenu.slideToggle();
+  // });
+};
+$(document).ready(function () {
   var menuToggleBtn = $(".menu-toggle-btn");
   mainMenu = $(".toggle-menu-bar-list");
   menuToggleBtn.click(function () {
     mainMenu.slideToggle();
-  });
-};
+  })
+});
