@@ -1,31 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MZ37QQWH');</script>
-  <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <link rel="icon" type="image/png" sizes="16x16" href="imagepc/logo.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/macdonald 2.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -35,20 +17,35 @@
     <script src="js/prefixfree.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <title>맥도날드</title>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-304227740-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-304227740-1');
-</script>
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZ37QQWH"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <!-- 안내창 -->
+    <div class="modal-wrap">
+      <div class="modal-main">
+        <span class="modal-logo"></span>
+        <p class="modal-notice">
+          해당 사이트는 <strong>스터디용</strong>으로 제작되었으며,<br />
+          리소스는 <strong>원저작자</strong>에게 있음을 알려드립니다.<br />
+          문제사항이 있을 시 연락주시면 빠른 시일 내 조치하겠습니다.<br />
+          <span>본 사이트는 Chrome 에 최적화되어 있습니다.</span>
+        </p>
+        <div class="modal-corrections">
+          <strong>아래 내용을 수정 및 보충하였습니다.</strong>
+          <ul class="clearfix">
+            <li class="corrctions-number">1.</li>
+            <li class="corrctions-txt">Visual section 원사이트에는 없는 Swiper를 추가하였습니다.</li>
+          </ul>
+          <ul class="clearfix">
+            <li class="corrctions-number">2.</li>
+            <li class="corrctions-txt">news section 레이아웃을 보기 좋게 높이를 수작업 vw 로 맞춰주었습니다.</li>
+          </ul>
+        </div>
+        <div class="modal-close">확인했습니다. <i>(Click 하여 닫기)</i></div>
+      </div>
+    </div>
     <div class="wrap">
       <!-- 헤더 -->
       <header class="header">
@@ -84,25 +81,19 @@
               <li><a href="#">What’s New</a></li>
               <li><a href="#">Brand Story</a></li>
               <li><a href="#">Food Quality Story</a></li>
-                </ul>
-                <div class="menu-bar-list-search">
-                  <form action="#" class="search">
-                    <input
-                      type="text"
-                      class="search-text"
-                      maxlength="100"
-                      placeholder="검색어를 입력해주세요"
-                    />
-                    <input type="button" class="search-bt" />
-                  </form>
-              </div>
-                <ul class="toggle-menu-list">
-                  <li><a href="#">ENG</a></li>
-                  <li><a href="#">고객문의</a></li>
-                  <li><a href="#">임차문의</a></li>
-                  <li><a href="#">인재채용</a></li>
-                </ul>
-              </li>
+            </ul>
+            <div class="menu-bar-list-search">
+              <form action="#" class="search">
+                <input type="text" class="search-text" maxlength="100" placeholder="검색어를 입력해주세요" />
+                <input type="button" class="search-bt" />
+              </form>
+            </div>
+            <ul class="toggle-menu-list">
+              <li><a href="#">ENG</a></li>
+              <li><a href="#">고객문의</a></li>
+              <li><a href="#">임차문의</a></li>
+              <li><a href="#">인재채용</a></li>
+            </ul>
           </div>
           <!-- <div class="search">
             <a href="#"><img src="imagepc/ico_search.png" alt="" /></a>
@@ -127,9 +118,7 @@
             <a href="#"><img src="imagepc/5.jpg" alt="맥모닝" /></a>
           </div>
           <div class="swiper-slide">
-            <a href="#">
-              <img src="imagepc/6.jpg" alt="라즈베리 크림치즈 파이"
-            /></a>
+            <a href="#"> <img src="imagepc/6.jpg" alt="라즈베리 크림치즈 파이" /></a>
           </div>
           <div class="swiper-slide">
             <a href="#"><img src="imagepc/7.jpg" alt="칠러" /></a>
@@ -185,7 +174,7 @@
             <a href="#"><img src="imagemb/5.jpg" alt="맥모닝" /></a>
           </div>
           <div class="swiper-slide">
-            <a href="#"><img src="imagemb/6.jpg" alt="라즈베리 크림치즈 파이"/></a>
+            <a href="#"><img src="imagemb/6.jpg" alt="라즈베리 크림치즈 파이" /></a>
           </div>
           <div class="swiper-slide">
             <a href="#"><img src="imagemb/7.jpg" alt="칠러" /></a>
@@ -263,10 +252,7 @@
               </li>
               <li>
                 <a href="#">
-                  <img
-                    src="imagepc/1700726134574.jpg"
-                    alt="토마토 치킨 스낵랩"
-                  />
+                  <img src="imagepc/1700726134574.jpg" alt="토마토 치킨 스낵랩" />
                   <span
                     >신선한 토마토와 <br />
                     매콤한 소스의 만남!</span
@@ -293,10 +279,7 @@
               </li>
               <li>
                 <a href="#">
-                  <img
-                    src="imagepc/1677684764973.jpg"
-                    alt="베이컨 토마토 에그 머핀"
-                  />
+                  <img src="imagepc/1677684764973.jpg" alt="베이컨 토마토 에그 머핀" />
                   <span
                     >갓 구워내 따뜻하고 신선한 <br />
                     베이컨 토마토 에그 머핀!</span
@@ -367,9 +350,7 @@
               <li>전화주문: 1600-5252</li>
             </ul>
             <span></span>
-            <p class="copyright">
-              COPYRIGHT © 2019 ALL RIGHTS RESERVED BY McDonald's.
-            </p>
+            <p class="copyright">COPYRIGHT © 2019 ALL RIGHTS RESERVED BY McDonald's.</p>
           </nav>
           <!-- 하단 오른쪽 -->
           <nav class="footer-right">
